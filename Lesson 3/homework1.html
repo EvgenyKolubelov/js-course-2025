@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const index = prompt("Enter value");
+        const even = (value) => (Number(value) % 2);
+        const result = even(index);
+        if (Boolean(result) === true){
+            alert("Odd");
+        }
+        else {
+            alert("Even");
+        };
+        console.log(even(index));
+    </script>
+</body>
+
+</html>

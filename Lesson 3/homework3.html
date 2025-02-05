@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const index = prompt("Enter Year");
+        const even = (value) => (Number(value) % 4);
+        const result = even(index);
+        if (Boolean(result) === true) {
+            alert("is not a leap year");
+        }
+        else {
+            alert("is a leap year");
+        };
+    </script>
+</body>
+
+</html>
