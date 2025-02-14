@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let initialValue = "Кобан упал лапу набок";
+        let value = initialValue.replace(/\s+/g, "").toLowerCase()
+        let len = value.length;
+
+        let isPalindrom;
+
+        for (let i = 0; i < len / 2; i++) {
+            if (value[i] !== value[len - 1 - i]) {
+                isPalindrom = false;
+                break;
+            }
+            isPalindrom = true;
+        }
+
+        if (isPalindrom) {
+            console.log("Data " + initialValue + " is palindrom!")
+        } else {
+            console.log("Data " + initialValue + " is not palindrom!")
+        }
+    </script>
+</body>
+
+</html>
